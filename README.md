@@ -1,1 +1,2 @@
-Part 1
+# Salary Prediction Portfolio Project
+Part 1 Define
