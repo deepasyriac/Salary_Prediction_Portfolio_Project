@@ -1,2 +1,3 @@
-# Salary Prediction Portfolio Project
-Part 1 Define
+# Predict salary of employees with their JobId
+
+## Introduction
