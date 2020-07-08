@@ -39,12 +39,12 @@ The following three regression algorithms are used for creating models.
 <br>1.Linear Regression
 <br>2.Random Forest Regressor
 <br>3.Gradient Boosting Regressor
-The performance of the predicted models are evaluated using __Mean Square Error(MSE)__ metrics.The MSE for each models given below: 
+The performance of the predicted models are evaluated using Mean Square Error(MSE) metrics.The MSE for each models given below: 
 - Linear Regression -922.934
 - Random Forest Regressor -388.097
 - Gradient Boosting Regressor -359.025
 <br>
-Since the predictions are calculated using model with lowest MSE, I selected __Gradient boosting regression__ algorithm as the best model (MSE=359.026).
+Since the predictions are calculated using model with lowest MSE, I selected Gradient boosting regression algorithm as the best model (MSE=359.026).
 Next I saved the predictions to a CSV file.
 <br>The last step feature importance analysis was done to know which features were the most important in the model. The below graph shows the Job type, yearsexperience, milesFrommetropolis, and industry are the most important features in the model.
 
