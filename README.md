@@ -47,4 +47,6 @@ The performance of the predicted models are evaluated using __Mean Square Error(
 Since the predictions are calculated using model with lowest MSE, I selected __Gradient boosting regression__ algorithm as the best model (MSE=359.026).
 Next I saved the predictions to a CSV file.
 <br>The last step feature importance analysis was done to know which features were the most important in the model. The below graph shows the Job type, yearsexperience, milesFrommetropolis, and industry are the most important features in the model.
+
+
 ![feature_importance](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/feature_importance.JPG)
