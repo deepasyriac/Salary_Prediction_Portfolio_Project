@@ -23,3 +23,7 @@ The given data can be divided into categorical features and numerical features.
 - yearsExperience :The number of year of experience required for the job posting.
 - milesFromMetropolis :The distance from the major city which company is located to the place which employee stay
 - salary :Salary for the job posting(Target variable)
+
+![salary_distplot](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/salary_distplot.JPG)
+<br>
+Figure(a) Distribution of predicted variable salary(distplot)
