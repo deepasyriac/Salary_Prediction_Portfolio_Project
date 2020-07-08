@@ -23,7 +23,27 @@ The given data can be divided into categorical features and numerical features.
 - yearsExperience :The number of year of experience required for the job posting.
 - milesFromMetropolis :The distance from the major city which company is located to the place which employee stay
 - salary :Salary for the job posting(Target variable)
+<br>
+To check for the potential outliers, below figure shows the disrtibution of predicted variable salary.
 
 ![salary_distplot](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/salary_distplot.JPG)
+![salary_boxplot](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/salary_boxplot.JPG)
 <br>
-Figure(a) Distribution of predicted variable salary(distplot)
+The boxplot shows there are some outliers existing. After analysing the data using IQR method the data seems to be correct .The upperlimit outliers are acceptable eventhough the jobs are highly paid because they have higher degrees or they are working in highly paid industries. The lowerlimit outliers are 5 records with zero salary and that are removed because zero salary employees are not acceptable.
+<br/>
+Below is the correlation matrix heatmap which shows the correlation between selected features and response
+![salary_heatmap](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/salary_heatmap.PNG)
+</br>
+## Model Evaluation and Selection
+The following three regression algorithms are used for creating models.
+1.Linear Regression
+2.Random Forest Regressor
+3.Gradient Boosting Regressor
+The performance of the predicted models are evaluated using _Mean Square Error(MSE)_ metrics.The MSE for each models given below: 
+Linear Regression -922.934
+Random Forest Regressor -388.097
+Gradient Boosting Regressor -359.025
+Since the predictions are calculated using model with lowest MSE, I selected _Gradient boosting regression_ algorithm as the best model (MSE=359.026).
+Next I saved the predictions to a CSV file.
+The last step feature importance analysis was done to know which features were the most important in the model. The below graph shows the Job type, yearsexperience, milesFrommetropolis, and industry are the most important features in the model.
+![feature_importance](https://github.com/deepasyriac/Salary_Prediction_Portfolio_Project/blob/master/feature_importance.JPG)
